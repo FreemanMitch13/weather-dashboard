@@ -80,7 +80,6 @@ function getLatLon(location) {
             document.getElementById('current-date').innerHTML = date;
             document.getElementById('current-icon').append(dayImgEl);
             document.getElementById('current-temp').innerHTML += k2f(data.current.temp) + " &#176F";
-            document.getElementById('current-feels-like').innerHTML += k2f(data.current.feels_like) + " &#176F";
             document.getElementById('current-humidity').innerHTML += data.current.humidity + "%";
             document.getElementById('current-windSpeed').innerHTML += data.current.wind_speed + " MPH";
 
@@ -106,8 +105,6 @@ function getLatLon(location) {
             dateEl.setAttribute("class", "cardText");
             let currentTempEl = document.createElement('p');
             currentTempEl.setAttribute("class", "cardText");
-            let feelsLikeEl = document.createElement('p');
-            feelsLikeEl.setAttribute("class", "cardText");
             let humidityEl = document.createElement('p');
             humidityEl.setAttribute("class", "cardText");
             let windSpeedEl = document.createElement('p');
