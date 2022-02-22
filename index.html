@@ -25,22 +25,26 @@
         <div class="col-lg-2 mt-2">
             <form class="col-lg-3 mt-2">
                 <div class="form-group">
-                    <input type="text" id = "userInput" class="city " placeholder="Your Destination...">
+                    <input type="text" id = "userInput" class="city " placeholder="Desired Location...">
                 </div>
-                <button type="button" class="searchBtn btn btn-secondary btn-sm">Show Me!</button>
+                <button type="button" class="searchBtn btn btn-secondary btn-sm">Show Me The Forecast!</button>
             </form>
+            <div id = "historyEl" class="list-group mt-2">
+              <a href="#" class="list-group-item list-group-item-action" id="list-1">Search History</a>
+          </div>
         </div>
         <div class= "currentDay col-lg-10 mt-2">
           <div class="card">
             <div class="currentDayHead card-header">
-              Featured
+              <h5 id="currentTitle">Forecast</h5>
             </div>
             <div class="currentDayBody card-body">
               <p class="card-text ml-2 mt-4" id="current-date"></p>
               <i class="card-text mb-5 mr-5" id="current-icon"></i>
-              <p class="card-text ml-2" id ='current-temp'>Current Temp:  </p>
-              <p class="card-text ml-2 mb-4" id="current-windSpeed">Wind Speed:  </p>
-              <p class="card-text ml-2" id="current-humidity">Humidity:  </p>
+              <p class="card-text ml-2" id ='current-temp'>Current Temp:<span id="curTemp"></span>  </p>
+              <p class="card-text ml-2 mb-4" id="current-windSpeed">Wind Speed:<span id="curSpeed"></span>  </p>
+              <p class="card-text ml-2" id="current-humidity">Humidity:<span id="curHumidity"></span>  </p>
+              <p class="card-text ml-2" id="current-uvi">UV Index:<span id="curUVI"></span> </p>
             </div>
           </div>
       </div> 
